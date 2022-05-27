@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "60789130846",
-    "project_id": "recycler-view-c20cc",
-    "storage_bucket": "recycler-view-c20cc.appspot.com"
+    "project_number": "1042115827489",
+    "project_id": "retialclothingapp",
+    "storage_bucket": "retialclothingapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:60789130846:android:37d29026ac2277b490d6cf",
+        "mobilesdk_app_id": "1:1042115827489:android:2f96310f1c23ea2510d060",
         "android_client_info": {
           "package_name": "com.example.recyclerview"
         }
       },
       "oauth_client": [
         {
-          "client_id": "60789130846-p51ud9v3b6iq5k4s4n30b4pp4uslf33r.apps.googleusercontent.com",
+          "client_id": "1042115827489-tcfj1ncrpqur08p6pc5uch8ugvnu4kk7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0SA7rCNOO0OoR5tGbRxz4zUl60g72fI0"
+          "current_key": "AIzaSyAO8KlB4ct4lQk042wiXY5eXjPGt_Brb3c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "60789130846-p51ud9v3b6iq5k4s4n30b4pp4uslf33r.apps.googleusercontent.com",
+              "client_id": "1042115827489-tcfj1ncrpqur08p6pc5uch8ugvnu4kk7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
