@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="MEN"
+        android:visible="true"
+        android:tooltipText="@string/common_google_play_services_install_button"
+        />
+    <item android:title="WOMEN"
+       />
+    <item android:title="KIDS"
+        />
+
+</menu>

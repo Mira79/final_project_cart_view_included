@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shippiing_fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Shipping Information"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:id="@+id/shippingBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippingBackButton"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/firstnameLayout"
+        >
+        <EditText
+            android:id="@+id/shippingFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnameLayout"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="First Name"
+            android:layout_marginEnd="20dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstnameLayout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/shippingLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Last Name"
+            android:textSize="2sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastnameLayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippingLastName"
+            android:layout_marginTop="10dp"
+            android:hint="street name and number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apartment / House # "
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/shippingFirstName"
+            android:layout_marginEnd="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal Code "
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/shippingFirstName"
+            android:layout_marginEnd="20dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addresslayout"
+        android:orientation="vertical"
+
+        >
+
+        <EditText
+            android:id="@+id/shippingPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:id="@+id/paymentshipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippingPhone"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/material_dynamic_neutral_variant70"
+            android:elegantTextHeight="true"
+            android:text="Payment"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

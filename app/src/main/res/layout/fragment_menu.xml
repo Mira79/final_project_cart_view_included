@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MenuFragment">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/departments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <Button
+            android:id="@+id/mens"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="MENS"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/women"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="WOMEN"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <Button
+            android:id="@+id/kids"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="KIDS"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/departments"
+        >
+    </ListView>
+
+
+
+
+
+</RelativeLayout>
