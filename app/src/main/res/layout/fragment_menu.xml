@@ -22,6 +22,10 @@
             android:text="MENS"
             android:textSize="15sp"
             android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elegantTextHeight="true"
             />
         <Button
             android:id="@+id/women"
@@ -30,6 +34,10 @@
             android:text="WOMEN"
             android:textSize="15sp"
             android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elegantTextHeight="true"
 
             />
         <Button
@@ -39,6 +47,10 @@
             android:text="KIDS"
             android:textSize="15sp"
             android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elegantTextHeight="true"
             />
     </LinearLayout>
     <ListView

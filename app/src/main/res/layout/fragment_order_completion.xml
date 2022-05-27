@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="   Order Completed!
-                       Thank you shopping!"
+                      Thank you for shopping!"
 
         android:textSize="35sp"
         android:textColor="@color/black"
