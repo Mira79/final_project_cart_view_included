@@ -5,24 +5,26 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <TextView
-        android:layout_marginTop="30dp"
+    <Button
         android:id="@+id/newarrivaltxt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Arrivals"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:text="New Arrivals"
+        android:textSize="30sp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
         android:textColor="@color/teal_700"
-        />
+        android:textStyle="bold"
+        android:elegantTextHeight="true" />
+
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_below="@+id/newarrivaltxt"
+        android:id="@+id/viewpager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager2"
+        android:layout_below="@+id/newarrivaltxt"
         android:paddingStart="80dp"
-        android:paddingEnd="80dp"
-        />
+        android:paddingEnd="80dp" />
 
 </RelativeLayout>

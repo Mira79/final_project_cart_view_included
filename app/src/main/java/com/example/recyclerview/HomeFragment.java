@@ -3,6 +3,7 @@ package com.example.recyclerview;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
@@ -13,6 +14,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,7 @@ public class HomeFragment extends Fragment {
     private List<image> imageList;
     private ImageAdoptor adoptor;
     private Handler sliderHandler = new Handler();
+    Button newarrival;
 
 
     @Override
@@ -33,9 +36,17 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
 
+        newarrival = view.findViewById(R.id.newarrivaltxt);
+        newarrival.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                replaceFragment();
+            }
+        });
         viewPager2 = view.findViewById(R.id.viewpager2);
         imageList = new ArrayList<>();
 
@@ -91,4 +102,9 @@ public class HomeFragment extends Fragment {
 
         }
     };
+    public void replaceFragment() {
+        AppCompatActivity activity = (AppCompatActivity)getContext();
+        activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new MainDisplayFragment()).addToBackStack(null).commit();
+
+    }
 }
